@@ -3,7 +3,8 @@ const Token=require('../model/TokenModel')
 const sendEmail=require('../sendEmail')
 const crypto=require('crypto')
 const jwt=require('jsonwebtoken')
-const expressjwt=require('express-jwt')
+const { expressjwt } = require('express-jwt')
+
 
 
 exports.register=async(req,res)=>{
