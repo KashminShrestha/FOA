@@ -5,10 +5,10 @@ export const userRegister=(username,email,password)=>{
     return fetch(`${API}/users/register`,{
         method:"POST",
         headers:{
-            "Content_Type":"application/json"
+            "Content-Type":"application/json"
         },
         body:JSON.stringify(user)
     })
     .then(res=>{return res.json()})
-    .catch(err=>console.log(err))
+    .catch(error=>console.log(error))
 }
