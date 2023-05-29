@@ -3,8 +3,7 @@ const Token=require('../model/TokenModel')
 const sendEmail=require('../sendEmail')
 const crypto=require('crypto')
 const jwt=require('jsonwebtoken')
-const { expressjwt } = require('express-jwt')
-
+const expressjwt=require('express-jwt')
 
 
 exports.register=async(req,res)=>{
@@ -132,7 +131,7 @@ exports.forgetPassword=async(req,res)=>{
 exports.resetPassword=async(req,res)=>{
     let token =await Token.findOne({token:req.params.id})
     if(!token){
-        res.status(400).json({err:"Token invalid or expired"})
+        return res.status(400).json({err:"Token invalid or expired"})
     }
     let user =await User.findById(token.user)
     if(!user){

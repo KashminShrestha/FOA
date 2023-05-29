@@ -1,16 +1,15 @@
 const express=require("express")
-const app=express()
 const cors=require('cors')
+
+const app=express()
 require('dotenv').config()
 
 port=process.env.PORT || 3001
-
 const testroute=require('./routes/testroute')
-const userroute=require('./routes/UserRoutes')
 const categoryroute= require('./routes/CategoryRoutes')
-
-
-
+const productroute= require('./routes/ProductRouters')
+const userroute=require('./routes/UserRoutes')
+const orderroute=require('./routes/OrderRoutes')
 
 require('./database/connection')
 
@@ -21,8 +20,9 @@ app.listen(port,()=>{
 app.use(cors())
 app.use(express.json())
 app.use(testroute)
-app.use('/user',userroute)
 app.use('/category',categoryroute)
-
+app.use('/product',productroute)
+app.use('/user',userroute)
+app.use('/order',orderroute)
 
 console.log("Hello")

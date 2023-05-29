@@ -1,13 +1,12 @@
-import React from 'react'
-import Routess from './Routess'
+import React from "react";
+import Routess from "./Routes";
 
-
-const App = props => {
+const App = (props) => {
   return (
     <>
-    <Routess/>
+      <Routess />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
