@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
 :root {
-    --yellow: #feaa1a;
+    --yellow: #2ae7d7;
     --black: #192a56;
     --ligth-color: #616161;
     --white: #fff;
@@ -32,7 +32,7 @@ section, footer {
 }
 
 section:nth-child(even) {
-    background-color: #FFE32C;
+    background-color: white;
 }
 
 .btn {
@@ -615,11 +615,13 @@ header .icons #menu-bars {
     padding: .5rem 0;
     font-size: 1.5rem;
     color: var(--ligth-color);
+    text-decoration: none;
+
 }
 
 .footer .box-container .box a:hover {
     color: var(--yellow);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer .credit {

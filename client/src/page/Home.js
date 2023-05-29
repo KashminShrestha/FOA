@@ -1,21 +1,25 @@
-import React from 'react'
-import Navbar from '../component/Navbar'
-import Main from '../component/Main'
-import Footer from '../component/Footer'
-import "../mystyle.css"
-import Carousel from '../component/Carousel'
-import Product from '../component/Product'
+import React from "react";
+import Navbar from "../component/Navbar";
+import Footer from "../component/Footer";
+import "../mystyle.css";
+import Carousel from "../component/Carousel";
+import Product from "../component/Product";
+import Aboutus from "../component/Aboutus";
+import OurMenu from "../component/OurMenu";
+import OrderingForm from "../component/OrderingForm";
 
 const Home = () => {
   return (
     <>
-    <Navbar/>
-    <Carousel/>
-    <Product/>
-    <Main/>
-    <Footer/>
+      <Navbar />
+      <Carousel />
+      <Product />
+      <Aboutus />
+      <OurMenu />
+      <OrderingForm />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

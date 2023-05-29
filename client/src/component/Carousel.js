@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Carousel = () => {
-  
   return (
     <>
       <section className="home" id="home">
@@ -21,7 +20,7 @@ const Carousel = () => {
                 </Link>
               </div>
               <div className="image">
-                <img src="./images/nepaliset.png" alt="" />
+                <img src="images/nepaliset.png" alt="" />
               </div>
             </div>
 
